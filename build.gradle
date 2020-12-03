@@ -15,6 +15,8 @@ repositories {
 }
 
 dependencies {
+    testImplementation "io.rest-assured:rest-assured:4.1.2"
+
     testImplementation "org.junit.jupiter:junit-jupiter-api:5.6.2"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:5.6.2"
 }
@@ -25,4 +27,9 @@ tasks.withType(JavaCompile) {
 
 test {
     useJUnitPlatform()
+}
+
+task some_task_name(type: Test) {
+    useJUnitPlatform {
+    }
 }
