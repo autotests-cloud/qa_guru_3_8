@@ -12,4 +12,5 @@ public class DemowebshopApiTests {
                 .then()
                 .body("books[0].title", is("Git Pocket Guide"));
     }
+
 }
