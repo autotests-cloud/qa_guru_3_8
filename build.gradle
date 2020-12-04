@@ -28,8 +28,3 @@ tasks.withType(JavaCompile) {
 test {
     useJUnitPlatform()
 }
-
-task some_task_name(type: Test) {
-    useJUnitPlatform {
-    }
-}
